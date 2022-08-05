@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title> Hobbies </title>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+          <th> Brand</th>
+          <th>Generation</th>
+        </tr>
+        {% for item in items %}
+        <tr>
+          <td style="text-align: center">{{item.brand}}</td>
+          <td style="text-align: center">{{item.gen}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
